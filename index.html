@@ -1,81 +1,66 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Github, Mail, Globe, MapPin } from "lucide-react";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brian Kipkemboi Kibet - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Brian Kipkemboi Kibet</h1>
+      <h2>Founder & Lead Dev @ Izetech Computers</h2>
+      <p class="intro">Backend Developer | ICT & Network Specialist | Passionate about building scalable ISP & tech solutions across Kenya.</p>
+      <div class="social-links">
+        <a href="mailto:kipkemboikibet1@gmail.com">Email</a>
+        <a href="https://github.com/brian-ki" target="_blank">GitHub</a>
+        <a href="https://izetechcomputers.com" target="_blank">Website</a>
+        <span>Kenya</span>
+      </div>
+    </header>
 
-export default function Portfolio() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-950 to-gray-900 text-white px-6 py-10 space-y-10">
-      <section className="text-center space-y-4">
-        <h1 className="text-4xl md:text-6xl font-bold">Brian Kipkemboi Kibet</h1>
-        <h2 className="text-xl md:text-2xl text-gray-300">Founder & Lead Dev @ Izetech Computers</h2>
-        <p className="max-w-2xl mx-auto text-gray-400">
-          Backend Developer | ICT & Network Specialist | Passionate about building scalable ISP & tech solutions across Kenya.
-        </p>
-        <div className="flex justify-center gap-4 mt-4">
-          <a href="mailto:kipkemboikibet1@gmail.com"><Mail className="w-5 h-5" /></a>
-          <a href="https://github.com/brian-ki" target="_blank"><Github className="w-5 h-5" /></a>
-          <a href="https://izetechcomputers.com" target="_blank"><Globe className="w-5 h-5" /></a>
-          <MapPin className="w-5 h-5" /> Kenya
-        </div>
-      </section>
+    <section class="about">
+      <h3>About Me</h3>
+      <p>I’m a results-driven backend developer and network engineer with experience in cloud computing, LoRaWAN integration, and ICT infrastructure. I founded Izetech Computers to provide reliable ISP services and build custom solutions tailored for rural and conservation settings.</p>
+    </section>
 
-      <section className="space-y-4">
-        <h3 className="text-2xl font-semibold text-center">About Me</h3>
-        <p className="max-w-3xl mx-auto text-gray-400 text-center">
-          I’m a results-driven backend developer and network engineer with experience in cloud computing, LoRaWAN integration, and ICT infrastructure. 
-          I founded Izetech Computers to provide reliable ISP services and build custom solutions tailored for rural and conservation settings.
-        </p>
-      </section>
+    <section class="skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>Python | PHP | JavaScript</li>
+        <li>Docker | AWS EC2 | Ubuntu</li>
+        <li>SQL | MySQL | M-Pesa API</li>
+        <li>Networking: VPN, VLAN, PPPoE</li>
+        <li>Tableau | QGIS | LoRaWAN</li>
+        <li>Server Admin | Automation</li>
+      </ul>
+    </section>
 
-      <section className="space-y-4">
-        <h3 className="text-2xl font-semibold text-center">Skills</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto text-center text-gray-300">
-          <span>Python | PHP | JavaScript</span>
-          <span>Docker | AWS EC2 | Ubuntu</span>
-          <span>SQL | MySQL | M-Pesa API</span>
-          <span>Networking: VPN, VLAN, PPPoE</span>
-          <span>Tableau | QGIS | LoRaWAN</span>
-          <span>Server Admin | Automation</span>
-        </div>
-      </section>
+    <section class="projects">
+      <h3>Projects</h3>
+      <div class="project">
+        <h4>ISP Billing System</h4>
+        <p>Custom hotspot and monthly client billing software with M-Pesa integration.</p>
+        <a href="https://isp.izetechcomputers.com" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h4>Izetech Official Website</h4>
+        <p>Business website showcasing ISP services and digital solutions.</p>
+        <a href="https://izetechcomputers.com" target="_blank">Visit Site</a>
+      </div>
+    </section>
 
-      <section className="space-y-6">
-        <h3 className="text-2xl font-semibold text-center">Projects</h3>
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card>
-            <CardContent className="p-4 space-y-2">
-              <h4 className="text-xl font-semibold">ISP Billing System</h4>
-              <p className="text-gray-400">Custom hotspot and monthly client billing software with M-Pesa integration.</p>
-              <a href="https://isp.izetechcomputers.com" target="_blank">
-                <Button>View Project</Button>
-              </a>
-            </CardContent>
-          </Card>
+    <section class="certifications">
+      <h3>Certifications</h3>
+      <p>View my Cisco Certifications on <a href="https://www.credly.com/users/brian-kibet.4680f510" target="_blank">Credly</a>.</p>
+    </section>
 
-          <Card>
-            <CardContent className="p-4 space-y-2">
-              <h4 className="text-xl font-semibold">Izetech Official Website</h4>
-              <p className="text-gray-400">Business website showcasing ISP services and digital solutions.</p>
-              <a href="https://izetechcomputers.com" target="_blank">
-                <Button>Visit Site</Button>
-              </a>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
-
-      <section className="space-y-4">
-        <h3 className="text-2xl font-semibold text-center">Certifications</h3>
-        <p className="text-center text-gray-400">
-          View my Cisco Certifications on <a className="text-blue-400 underline" href="https://www.credly.com/users/brian-kibet.4680f510" target="_blank">Credly</a>.
-        </p>
-      </section>
-
-      <section className="text-center space-y-2">
-        <h3 className="text-2xl font-semibold">Contact Me</h3>
-        <p className="text-gray-400">📧 kipkemboikibet1@gmail.com | 📍 Naivasha, Kenya</p>
-        <a href="https://github.com/brian-ki" className="text-blue-400 underline">github.com/brian-ki</a>
-      </section>
-    </div>
-  );
-}
+    <section class="contact">
+      <h3>Contact Me</h3>
+      <p>Email: <a href="mailto:kipkemboikibet1@gmail.com">kipkemboikibet1@gmail.com</a> | Location: Naivasha, Kenya</p>
+      <a href="https://github.com/brian-ki" class="github-link">GitHub: github.com/brian-ki</a>
+    </section>
+  </div>
+</body>
+</html>
